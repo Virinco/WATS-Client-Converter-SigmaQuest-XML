@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UnitReport attachments="true" start-time="2024-12-11T10:19:25+00:00" end-time="2024-12-11T14:47:47+00:00">
+<Station guid="54AD65454" name="&lt;No Station>"/>
+<Operator name="OP2"/>
+<Category name="Instruments">
+<Product part-no="1564678564" serial-no="SN651658" factory-order="None"/>
+</Category>
+<TestRun start-time="2024-12-10T15:34:53+00:00" name="OP2" end-time="2024-12-11T14:47:47+00:00" grade="FAIL">
+<TestRun start-time="2024-12-10T15:34:53+00:00" name="MANUFACTURING PRE-TEST" end-time="2024-12-10T15:50:42+00:00" grade="PASS">
+<TestRun start-time="2024-12-10T15:34:53+00:00" name="Raven Configuration" end-time="2024-12-10T15:34:54+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T15:34:54+00:00" name="Safety Message" end-time="2024-12-10T15:35:03+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T15:35:03+00:00" name="Instrument Preparation" end-time="2024-12-10T15:35:34+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="Firmware Version" lsl="0" usl="0">50.000</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PreTest/InstrumentPreparation/PreTest_InstrumentPreparation_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:35:34+00:00" name="Pump Down" end-time="2024-12-10T15:35:53+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T15:35:53+00:00" name="Vacuum Check" end-time="2024-12-10T15:37:56+00:00" grade="PASS">
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PreTest/VacuumCheck/PreTest_VacuumCheck_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:37:56+00:00" name="Align RF Generator" end-time="2024-12-10T15:40:12+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="MS1 value" lsl="0" usl="-2.4000">-3.4359</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="MS2 value" lsl="0" usl="-2.4000">-3.2405</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PreTest/AlignRFGenerator/PreTest_AlignRFGenerator_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:40:12+00:00" name="Gas Inlet Manifold" end-time="2024-12-10T15:50:42+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="Collision Pressure" lsl="0.0035000" usl="0.0040000">0.0039323</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PreTest/GasInletManifold/PreTest_GasInletManifold_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+</TestRun>
+<TestRun start-time="2024-12-10T15:50:42+00:00" name="INITIAL TUNING AND CHARGING" end-time="2024-12-11T10:22:04+00:00" grade="PASS">
+<TestRun start-time="2024-12-10T15:50:42+00:00" name="Basic Beam - Positive" end-time="2024-12-10T15:54:42+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Beam TIC" lsl="2.19e+11" usl="0">5.4601e+13</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Beam TIC" lsl="2.19e+11" usl="0">4.8829e+13</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/BasicBeamPositive/InitialTune_BasicBeamPositive_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:54:46+00:00" name="Basic Beam - Negative" end-time="2024-12-10T15:55:51+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="neg DCpos Beam TIC" lsl="1.075e+11" usl="0">8.1290e+12</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Beam TIC" lsl="1.075e+11" usl="0">5.0386e+12</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/BasicBeamNegative/InitialTune_BasicBeamNegative_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:55:55+00:00" name="MS2 Basic Beam - Positive" end-time="2024-12-10T15:57:02+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Beam TIC" lsl="1.31e+11" usl="0">1.7281e+13</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Beam TIC" lsl="1.31e+11" usl="0">1.5252e+13</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/MS2BasicBeamPositive/InitialTune_MS2BasicBeamPositive_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:57:06+00:00" name="MS2 Basic Beam - Negative" end-time="2024-12-10T15:58:11+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="neg DCpos Beam TIC" lsl="1.122e+11" usl="0">5.9542e+12</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Beam TIC" lsl="1.122e+11" usl="0">5.6352e+12</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/MS2BasicBeamNegative/InitialTune_MS2BasicBeamNegative_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T15:58:15+00:00" name="Set Multiplier Voltage - Positive" end-time="2024-12-10T15:59:29+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T15:59:31+00:00" name="Set Multiplier Voltage - Negative" end-time="2024-12-10T16:00:56+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T16:00:57+00:00" name="Initial Tune" end-time="2024-12-10T16:04:59+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T16:05:00+00:00" name="MS2 Initial Tune" end-time="2024-12-10T16:08:48+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-10T16:08:49+00:00" name="Ion Creation Stability" end-time="2024-12-10T16:12:05+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="RSD Percent" lsl="0" usl="20.000">5.075</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="Dropouts" lsl="0" usl="200.00">27.00</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/IonStability/InitialTune_IonStability_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T16:12:05+00:00" name="Probe Tune" end-time="2024-12-10T16:15:26+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="Intensity" lsl="1.0000e+5" usl="0">9.3636e+5</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/ProbeTune/InitialTune_ProbeTune_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T16:15:27+00:00" name="Short Term Mass Switching" end-time="2024-12-10T16:17:41+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="Mass Switch difference %" lsl="80.000" usl="0">98.136</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/RavenMassSwitchV2/InitialTune_RavenMassSwitchV2_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-10T16:17:42+00:00" name="MS1 Charging" end-time="2024-12-11T10:05:47+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="Peak 74 check" lsl="-15.000" usl="15.000">8.933</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="Peak 2017 check" lsl="-15.000" usl="15.000">2.977</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/ChargeTest/InitialTune_ChargeTest_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T10:05:47+00:00" name="RF Breakdown" end-time="2024-12-11T10:08:27+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="RF Breakdown %" lsl="-5.0000" usl="5.0000">-0.5437</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/RFBreakdown/InitialTune_RFBreakdown_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T10:08:28+00:00" name="MS2 RF Breakdown" end-time="2024-12-11T10:22:04+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="RF Breakdown %" lsl="-10.000" usl="10.000">8.534</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/InitialTune/MS2RFBreakdown/InitialTune_MS2RFBreakdown_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+</TestRun>
+<TestRun start-time="2024-12-11T10:22:06+00:00" name="POSITIVE MODE QUAD TUNING AND TESTING" end-time="2024-12-11T13:23:33+00:00" grade="PASS">
+<TestRun start-time="2024-12-11T10:22:06+00:00" name="Start" end-time="2024-12-11T10:22:06+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T10:22:06+00:00" name="Low Mass Ion Energy" end-time="2024-12-11T12:12:15+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Ion Energy" lsl="-1.4000" usl="-0.4000">-0.7651</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Ion Energy" lsl="-1.4000" usl="-0.4000">-0.8512</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PositiveSlowScanQuadTuning/RavenLowMassIonEnergy/PositiveSlowScanQuadTuning_RavenLowMassIonEnergy_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T10:27:05+00:00" name="Low Mass Resolution" end-time="2024-12-11T12:53:10+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos FWHH" lsl="0" usl="0">0.47974</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg FWHH" lsl="0" usl="0">0.51439</ValueDouble>
+</Property>
+</Result>
+</TestRun>
+<TestRun start-time="2024-12-11T10:29:20+00:00" name="High Mass Resolution" end-time="2024-12-11T12:53:14+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos FWHH" lsl="0" usl="0">0.50269</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Valley Percent" lsl="0" usl="0">14.696</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg FWHH" lsl="0" usl="0">0.49602</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Valley Percent" lsl="0" usl="0">15.313</ValueDouble>
+</Property>
+</Result>
+</TestRun>
+<TestRun start-time="2024-12-11T10:44:11+00:00" name="Low Mass Position" end-time="2024-12-11T13:07:09+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T10:45:14+00:00" name="High Mass Position" end-time="2024-12-11T13:08:15+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T10:50:35+00:00" name="High Mass Ion Energy" end-time="2024-12-11T13:08:27+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Ion Energy" lsl="-0.50000" usl="0.50000">0.0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Ion Energy" lsl="-0.50000" usl="0.50000">0.0</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PositiveSlowScanQuadTuning/RavenHighMassIonEnergy/PositiveSlowScanQuadTuning_RavenHighMassIonEnergy_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T10:51:55+00:00" name="Peak Shape Analysis" end-time="2024-12-11T13:08:28+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos User Low Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Low Mass Resolution" lsl="0" usl="0">516.69</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Low Mass Position" lsl="0" usl="0">518.81</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos User High Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Resolution" lsl="0" usl="0">1716.93</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Position" lsl="0" usl="0">258.99</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Resolution Linearity" lsl="0" usl="0">700.00</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Ion Energy" lsl="0" usl="0">-0.76511</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Ion Energy" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 Mass" lsl="73.600" usl="74.600">74.139</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 FWHH" lsl="0.40000" usl="0.60000">0.46682</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 Shoulder Height % (if negative add 100)" lsl="-10.000" usl="5.000">55.157</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 Shoulder Size" lsl="0" usl="0.27000">0.03781</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Mass" lsl="2017.10" usl="2018.10">2017.59</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 FWHH" lsl="0.40000" usl="0.60000">0.50660</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Asymmetry 25%" lsl="0" usl="1.7000">0.9221</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Asymmetry 50%" lsl="0" usl="1.7000">0.9481</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Valley Height %" lsl="0" usl="25.000">16.978</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Leading Edge Ratio" lsl="0" usl="1.8000">1.0077</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4+ Shoulder Height % (if negative add 100)" lsl="-20.000" usl="5.000">60.768</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4+ Shoulder Size" lsl="0" usl="0.27000">0.05256</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg User Low Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Low Mass Resolution" lsl="0" usl="0">508.85</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Low Mass Position" lsl="0" usl="0">518.81</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg User High Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Resolution" lsl="0" usl="0">1725.54</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Position" lsl="0" usl="0">262.82</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Resolution Linearity" lsl="0" usl="0">869.62</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Ion Energy" lsl="0" usl="0">-0.85120</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Ion Energy" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 Mass" lsl="73.600" usl="74.600">74.112</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 FWHH" lsl="0.40000" usl="0.60000">0.50675</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 Shoulder Height % (if negative add 100)" lsl="-10.000" usl="5.000">82.457</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 Shoulder Size" lsl="0" usl="0.27000">0.04554</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Mass" lsl="2017.10" usl="2018.10">2017.60</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 FWHH" lsl="0.40000" usl="0.60000">0.50213</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Asymmetry 25%" lsl="0" usl="1.7000">0.9903</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Asymmetry 50%" lsl="0" usl="1.7000">1.0359</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Valley Height %" lsl="0" usl="25.000">16.717</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Leading Edge Ratio" lsl="0" usl="1.8000">1.0446</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1+ Shoulder Height % (if negative add 100)" lsl="-20.000" usl="5.000">-18.962</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PositiveSlowScanQuadTuning/RavenPeakShapeAnalysis/PositiveSlowScanQuadTuning_RavenPeakShapeAnalysis_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T10:57:45+00:00" name="Linearity Tuning" end-time="2024-12-11T13:08:30+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos max FWHH deviation" lsl="0" usl="0">0.011726</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg max FWHH deviation" lsl="0" usl="0">0.027458</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PositiveSlowScanQuadTuning/LinearityTuning/PositiveSlowScanQuadTuning_LinearityTuning_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T12:04:17+00:00" name="Full Mass Range Peak Shape Analysis" end-time="2024-12-11T13:14:31+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCpos User Low Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Low Mass Resolution" lsl="0" usl="0">510.17</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Low Mass Position" lsl="0" usl="0">517.50</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos User High Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Resolution" lsl="0" usl="0">1722.57</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Position" lsl="0" usl="0">266.24</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Resolution Linearity" lsl="0" usl="0">869.62</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Ion Energy" lsl="0" usl="0">-0.76511</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos High Mass Ion Energy" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 Mass" lsl="73.600" usl="74.600">74.056</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 FWHH" lsl="0.40000" usl="0.60000">0.47410</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 Shoulder Height % (if negative add 100)" lsl="-10.000" usl="5.000">83.121</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1 Shoulder Size" lsl="0" usl="0.27000">0.13305</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 2 Mass" lsl="555.78" usl="556.78">556.22</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 2 FWHH" lsl="0.40000" usl="0.60000">0.50428</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 3 Mass" lsl="1121.49" usl="1122.49">1122.00</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 3 FWHH" lsl="0.40000" usl="0.60000">0.49711</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 3 Shoulder Height % (if negative add 100)" lsl="-10.000" usl="5.000">18.049</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 3 Shoulder Size" lsl="0" usl="0.27000">0.18035</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Mass" lsl="2017.10" usl="2018.10">2017.64</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 FWHH" lsl="0.40000" usl="0.60000">0.52250</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Asymmetry 25%" lsl="0" usl="1.7000">0.7607</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Asymmetry 50%" lsl="0" usl="1.7000">0.8365</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Valley Height %" lsl="0" usl="25.000">25.702</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4 Leading Edge Ratio" lsl="0" usl="1.8000">1.0643</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1+ Shoulder Height % (if negative add 100)" lsl="-20.000" usl="5.000">77.989</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 1+ Shoulder Size" lsl="0" usl="0.27000">0.37970</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 3+ Shoulder Height % (if negative add 100)" lsl="-20.000" usl="5.000">66.191</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 3+ Shoulder Size" lsl="0" usl="0.27000">0.45838</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4+ Shoulder Height % (if negative add 100)" lsl="-20.000" usl="5.000">35.555</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Peak 4+ Shoulder Size" lsl="0" usl="0.27000">0.12149</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg User Low Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Low Mass Resolution" lsl="0" usl="0">509.69</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Low Mass Position" lsl="0" usl="0">518.81</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg User High Mass Resolution" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Resolution" lsl="0" usl="0">1725.63</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Position" lsl="0" usl="0">262.82</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Resolution Linearity" lsl="0" usl="0">870.38</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Ion Energy" lsl="0" usl="0">-0.85120</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Ion Energy" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 Mass" lsl="73.600" usl="74.600">74.155</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 FWHH" lsl="0.40000" usl="0.60000">0.49350</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 2 Mass" lsl="555.78" usl="556.78">556.28</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 2 FWHH" lsl="0.40000" usl="0.60000">0.48722</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 3 Mass" lsl="1121.49" usl="1122.49">1122.02</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 3 FWHH" lsl="0.40000" usl="0.60000">0.46697</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Mass" lsl="2017.10" usl="2018.10">2017.64</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 FWHH" lsl="0.40000" usl="0.60000">0.50805</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Asymmetry 25%" lsl="0" usl="1.7000">0.9423</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Asymmetry 50%" lsl="0" usl="1.7000">0.9521</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Valley Height %" lsl="0" usl="25.000">15.561</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Leading Edge Ratio" lsl="0" usl="1.8000">0.9784</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1+ Shoulder Height % (if negative add 100)" lsl="-20.000" usl="5.000">-15.909</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PositiveSlowScanQuadTuning/FullRavenPeakShapeAnalysis/PositiveSlowScanQuadTuning_FullRavenPeakShapeAnalysis_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T13:14:34+00:00" name="High Mass Valley" end-time="2024-12-11T13:18:32+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Valley %" lsl="0" usl="12.000">0.166</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/PositiveSlowScanQuadTuning/HighMassValley/PositiveSlowScanQuadTuning_HighMassValley_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T13:18:34+00:00" name="DC Selection" end-time="2024-12-11T13:18:37+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T13:18:37+00:00" name="Capillary Tune" end-time="2024-12-11T13:23:33+00:00" grade="PASS"/>
+</TestRun>
+<TestRun start-time="2024-12-11T13:23:33+00:00" name="NEGATIVE MODE QUAD TUNING AND TESTING" end-time="2024-12-11T13:58:49+00:00" grade="PASS">
+<TestRun start-time="2024-12-11T13:23:33+00:00" name="Start" end-time="2024-12-11T13:23:33+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T13:23:34+00:00" name="Capillary Tune" end-time="2024-12-11T13:25:33+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T13:25:33+00:00" name="Low Mass Ion Energy" end-time="2024-12-11T13:27:36+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Ion Energy" lsl="-0.80000" usl="0.60000">-0.01770</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/NegativeSlowScanQuadTuning/RavenLowMassIonEnergy/NegativeSlowScanQuadTuning_RavenLowMassIonEnergy_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T13:27:37+00:00" name="Low Mass Resolution" end-time="2024-12-11T13:45:13+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="neg DCneg FWHH" lsl="0.35000" usl="0.65000">0.51051</ValueDouble>
+</Property>
+</Result>
+</TestRun>
+<TestRun start-time="2024-12-11T13:30:01+00:00" name="High Mass Resolution" end-time="2024-12-11T13:48:01+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="neg DCneg FWHH" lsl="0.35000" usl="0.65000">0.53010</ValueDouble>
+</Property>
+</Result>
+</TestRun>
+<TestRun start-time="2024-12-11T13:48:02+00:00" name="Full Mass Range Peak Shape Analysis" end-time="2024-12-11T13:58:43+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="neg DCneg User Low Mass Resolution" lsl="0" usl="0">15.421</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Low Mass Resolution" lsl="0" usl="0">509.69</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Low Mass Position" lsl="0" usl="0">518.81</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg User High Mass Resolution" lsl="0" usl="0">15.732</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg High Mass Resolution" lsl="0" usl="0">1725.63</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg High Mass Position" lsl="0" usl="0">262.82</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Resolution Linearity" lsl="0" usl="0">870.38</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Ion Energy" lsl="0" usl="0">-0.017704</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg High Mass Ion Energy" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 1 Mass" lsl="178.56" usl="179.56">179.09</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 1 FWHH" lsl="0.35000" usl="0.65000">0.50060</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 2 Mass" lsl="553.76" usl="554.76">554.33</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 2 FWHH" lsl="0.35000" usl="0.65000">0.49620</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 3 Mass" lsl="1165.49" usl="1166.49">1166.18</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 3 FWHH" lsl="0.35000" usl="0.65000">0.46234</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 4 Mass" lsl="1865.44" usl="1866.44">1866.24</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="neg DCneg Peak 4 FWHH" lsl="0.35000" usl="0.65000">0.51211</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/NegativeSlowScanQuadTuning/FullRavenPeakShapeAnalysis/NegativeSlowScanQuadTuning_FullRavenPeakShapeAnalysis_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T13:58:45+00:00" name="DC Selection" end-time="2024-12-11T13:58:49+00:00" grade="PASS"/>
+</TestRun>
+<TestRun start-time="2024-12-11T13:58:49+00:00" name="MS2 POSITIVE MODE QUAD TUNING AND TESTING" end-time="2024-12-11T14:42:09+00:00" grade="FAIL">
+<TestRun start-time="2024-12-11T13:58:49+00:00" name="Start" end-time="2024-12-11T13:58:50+00:00" grade="PASS"/>
+<TestRun start-time="2024-12-11T13:58:50+00:00" name="Low Mass Ion Energy" end-time="2024-12-11T14:44:22+00:00" grade="PASS">
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Ion Energy" lsl="-0.3000" usl="1.0000">0.4008</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Ion Energy Spread" lsl="0" usl="0.50000">0.12149</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Ion Energy" lsl="-0.3000" usl="1.0000">0.0527</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Ion Energy Spread" lsl="0" usl="0.50000">0.05436</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/MS2PositiveSlowScanQuadTuning/RavenLowMassIonEnergy/MS2PositiveSlowScanQuadTuning_RavenLowMassIonEnergy_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T14:03:54+00:00" name="Low Mass Resolution" end-time="2024-12-11T14:47:47+00:00" grade="FAIL">
+<Result>
+<Property>
+<ValueDouble name="pos DCneg FWHH" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos FWHH" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/MS2PositiveSlowScanQuadTuning/LowMassResolution/MS2PositiveSlowScanQuadTuning_LowMassResolution_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T14:05:41+00:00" name="High Mass Resolution" end-time="2024-12-11T14:46:44+00:00" grade="PENDING">
+<Result>
+<Property>
+<ValueDouble name="pos DCneg FWHH" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Valley Percent" lsl="0" usl="0">null</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos FWHH" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCpos Valley Percent" lsl="0" usl="0">null</ValueDouble>
+</Property>
+</Result>
+</TestRun>
+<TestRun start-time="2024-12-11T14:25:06+00:00" name="Low Mass Position" end-time="2024-12-11T14:28:45+00:00" grade="PENDING"/>
+<TestRun start-time="2024-12-11T14:26:06+00:00" name="High Mass Position" end-time="2024-12-11T14:30:01+00:00" grade="PENDING"/>
+<TestRun start-time="2024-12-11T14:30:01+00:00" name="High Mass Ion Energy" end-time="2024-12-11T14:31:26+00:00" grade="PENDING">
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Ion Energy" lsl="-0.50000" usl="0.50000">0.0</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/MS2PositiveSlowScanQuadTuning/RavenHighMassIonEnergy/MS2PositiveSlowScanQuadTuning_RavenHighMassIonEnergy_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+<TestRun start-time="2024-12-11T14:31:26+00:00" name="Peak Shape Analysis" end-time="2024-12-11T14:42:09+00:00" grade="PENDING">
+<Result>
+<Property>
+<ValueDouble name="pos DCneg User Low Mass Resolution 2" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Low Mass Resolution 2" lsl="0" usl="0">0.016505</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Low Mass Position 2" lsl="0" usl="0">554.81</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg User High Mass Resolution 2" lsl="0" usl="0">15.000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Resolution 2" lsl="0" usl="0">0.11613</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Position 2" lsl="0" usl="0">260.05</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Resolution Linearity 2" lsl="0" usl="0">700.00</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Ion Energy 2" lsl="0" usl="0">0.40083</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg High Mass Ion Energy 2" lsl="0" usl="0">0</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 Mass" lsl="73.600" usl="74.600">75.724</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 1 FWHH" lsl="0.4000" usl="0.6000">4.0000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Mass" lsl="2017.10" usl="2018.10">2017.42</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 FWHH" lsl="0.4000" usl="0.6000">4.0000</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Asymmetry 25%" lsl="0" usl="1.7000">0.8359</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Asymmetry 50%" lsl="0" usl="1.7000">0.8359</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Valley Height %" lsl="0" usl="25.000">99.722</ValueDouble>
+</Property>
+</Result>
+<Result>
+<Property>
+<ValueDouble name="pos DCneg Peak 4 Leading Edge Ratio" lsl="0" usl="1.8000">0.2150</ValueDouble>
+</Property>
+</Result>
+<Property>
+<ValueAttachment filter="" fqn="//OP2_TestResults/Analyser_Lid/SN651658/MS2PositiveSlowScanQuadTuning/RavenPeakShapeAnalysis/MS2PositiveSlowScanQuadTuning_RavenPeakShapeAnalysis_dhr0.html" name="DHR" type="application/octet-stream"/>
+</Property>
+</TestRun>
+</TestRun>
+</TestRun>
+</UnitReport>

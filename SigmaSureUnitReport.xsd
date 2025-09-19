@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:unitreport-schema" elementFormDefault="qualified" targetNamespace="urn:unitreport-schema">
+	<xs:element name="UnitReport">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="Station"/>
+				<xs:element ref="Operator"/>
+				<xs:element ref="Category"/>
+				<xs:element ref="Property" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="TestRun"/>
+			</xs:all>
+			<xs:attribute name="mode" type="xs:string" use="optional" default="D"/>
+			<xs:attribute name="start-time" type="xs:dateTime" use="required"/>
+			<xs:attribute name="end-time" type="xs:dateTime" use="optional"/>
+			<xs:attribute name="version" type="xs:string" use="optional"/>
+			<xs:attribute name="quantity" type="xs:long" use="optional"/>
+			<xs:attribute name="software-version" type="xs:string" use="optional"/>
+			<xs:attribute name="attachments" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Product">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Property"/>
+				<xs:element ref="Category" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Product" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="part-no" type="xs:string" use="required"/>
+			<xs:attribute name="serial-no" type="xs:string" use="required"/>
+			<xs:attribute name="name" type="xs:string" use="optional"/>
+			<xs:attribute name="version" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Category">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Property" minOccurs="0"/>
+				<xs:element ref="Product" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Category" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Operator">
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element ref="Property"/>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Station">
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element ref="Property"/>
+			</xs:choice>
+			<xs:attribute name="guid" type="xs:string" use="required"/>
+			<xs:attribute name="name" type="xs:string" use="optional"/>
+			<xs:attribute name="version" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Property">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="ValueDouble"/>
+				<xs:element ref="ValueInteger"/>
+				<xs:element ref="ValueString"/>
+				<xs:element ref="ValueTimestamp"/>
+				<xs:element ref="ValueBoolean"/>
+				<xs:element ref="ValueRecord"/>
+				<xs:element ref="ValueArray"/>
+				<xs:element ref="ValueAttachment"/>
+			</xs:choice>
+			<xs:attribute name="version" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TestRun">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Property"/>
+				<xs:element ref="SetUp"/>
+				<xs:element ref="Result"/>
+				<xs:element ref="TestRun"/>
+				<xs:element ref="Error"/>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="start-time" type="xs:dateTime" use="required"/>
+			<xs:attribute name="end-time" type="xs:dateTime" use="optional"/>
+			<xs:attribute name="version" type="xs:string" use="optional"/>
+			<xs:attribute name="grade" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetUp">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="ValueDouble"/>
+					<xs:element ref="ValueInteger"/>
+					<xs:element ref="ValueString"/>
+					<xs:element ref="ValueTimestamp"/>
+					<xs:element ref="ValueBoolean"/>
+					<xs:element ref="ValueRecord"/>
+					<xs:element ref="ValueArray"/>
+					<xs:element ref="ValueAttachment"/>
+				</xs:choice>
+				<xs:element ref="Property" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Result">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="ValueDouble"/>
+					<xs:element ref="ValueInteger"/>
+					<xs:element ref="ValueString"/>
+					<xs:element ref="ValueTimestamp"/>
+					<xs:element ref="ValueBoolean"/>
+					<xs:element ref="ValueRecord"/>
+					<xs:element ref="ValueArray"/>
+					<xs:element ref="ValueAttachment"/>
+				</xs:choice>
+				<xs:element ref="Property" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueAttachment">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="fqn" type="xs:string" use="required"/>
+			<xs:attribute name="type" type="xs:string" use="optional"/>
+			<xs:attribute name="filter" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueString">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" type="xs:string" use="optional"/>
+					<xs:attribute name="usl" type="xs:string" use="optional"/>
+					<xs:attribute name="lsl" type="xs:string" use="optional"/>
+					<xs:attribute name="uom" type="xs:string" use="optional"/>
+					<xs:attribute name="grade" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueDouble">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:double">
+					<xs:attribute name="name" type="xs:string" use="optional"/>
+					<xs:attribute name="usl" type="xs:double" use="optional"/>
+					<xs:attribute name="lsl" type="xs:double" use="optional"/>
+					<xs:attribute name="udil" type="xs:double" use="optional"/>
+					<xs:attribute name="ldil" type="xs:double" use="optional"/>
+					<xs:attribute name="uom" type="xs:string" use="optional"/>
+					<xs:attribute name="grade" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueInteger">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="name" type="xs:string" use="optional"/>
+					<xs:attribute name="usl" type="xs:integer" use="optional"/>
+					<xs:attribute name="lsl" type="xs:integer" use="optional"/>
+					<xs:attribute name="udil" type="xs:double" use="optional"/>
+					<xs:attribute name="ldil" type="xs:double" use="optional"/>
+					<xs:attribute name="uom" type="xs:string" use="optional"/>
+					<xs:attribute name="grade" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueBoolean">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:boolean">
+					<xs:attribute name="name" type="xs:string" use="optional"/>
+					<xs:attribute name="usl" type="xs:boolean" use="optional"/>
+					<xs:attribute name="lsl" type="xs:boolean" use="optional"/>
+					<xs:attribute name="uom" type="xs:string" use="optional"/>
+					<xs:attribute name="grade" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueTimestamp">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:dateTime">
+					<xs:attribute name="name" type="xs:string" use="optional"/>
+					<xs:attribute name="usl" type="xs:dateTime" use="optional"/>
+					<xs:attribute name="lsl" type="xs:dateTime" use="optional"/>
+					<xs:attribute name="udil" type="xs:dateTime" use="optional"/>
+					<xs:attribute name="ldil" type="xs:dateTime" use="optional"/>
+					<xs:attribute name="uom" type="xs:string" use="optional"/>
+					<xs:attribute name="grade" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueRecord">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="ValueDouble"/>
+				<xs:element ref="ValueInteger"/>
+				<xs:element ref="ValueString"/>
+				<xs:element ref="ValueTimestamp"/>
+				<xs:element ref="ValueBoolean"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueArray">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="ValueString"/>
+				<xs:element ref="ValueDouble"/>
+				<xs:element ref="ValueInteger"/>
+				<xs:element ref="ValueBoolean"/>
+				<xs:element ref="ValueTimestamp"/>
+				<xs:element ref="ValueRecord"/>
+				<xs:element ref="ValueArray"/>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Error">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Message" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Message">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
